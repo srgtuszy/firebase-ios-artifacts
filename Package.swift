@@ -6,7 +6,23 @@ let package = Package(
     products: [
         .library(
             name: "FirebaseCore",
-            targets: ["FirebaseCore", "GoogleUtilities", "GoogleDataTransport", "PromisesObjC", "FirebaseCoreDiagnostics"]
+            targets: ["FirebaseCore"]
+        ),
+        .library(
+            name: "GoogleDataTransport",
+            targets: ["GoogleDataTransport"]
+        ),
+        .library(
+            name: "FirebaseCoreDiagnostics",
+            targets: ["FirebaseCoreDiagnostics"]
+        ),
+        .library(
+            name: "PromisesObjC",
+            targets: ["PromisesObjC"]
+        ),
+        .library(
+            name: "GoogleUtilities",
+            targets: ["GoogleUtilities"]
         ),
         .library(
             name: "FirebaseInstallations",
