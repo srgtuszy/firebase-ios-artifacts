@@ -11,7 +11,7 @@ let package = Package(
         .library(
             name: "FirebaseDatabase",
             targets: ["FirebaseDatabase", "leveldb-library"]
-        ),
+        )
     ],
     targets: [
         .binaryTarget(
@@ -27,12 +27,12 @@ let package = Package(
         .binaryTarget(
             name: "FirebaseDatabase",
             url: "https://www.dropbox.com/s/qm49f286i4enpng/FirebaseDatabase.xcframework.zip?dl=1",
-            checksum: "aae47f63b9782b883f8fd601b053ac78661148645f77b1da37915613b28a667c",
+            checksum: "aae47f63b9782b883f8fd601b053ac78661148645f77b1da37915613b28a667c"
         ),
         .binaryTarget(
             name: "leveldb-library",
             url: "https://www.dropbox.com/s/ib3bxfgyn6s9gfb/leveldb-library.xcframework.zip?dl=1",
             checksum: "33cf592497a7cb20facc75cb93de54b2b2c7e64fbaeb34fdfaf5773317edfcba"
-        ),
+        )
     ]
 )
