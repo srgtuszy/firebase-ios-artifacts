@@ -5,11 +5,11 @@ let package = Package(
     name: "FirebaseSDK",
     products: [
         .library(
-            "FirebaseAuth",
+            name: "FirebaseAuth",
             targets: ["FirebaseAuth"]
         ),
         .library(
-            "FirebaseDatabase",
+            name: "FirebaseDatabase",
             targets: ["FirebaseDatabase"]
         ),
     ],
@@ -33,16 +33,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "leveldb-library",
-            url: "https://www.dropbox.com/s/ib3bxfgyn6s9gfb/leveldb-library.xcframework.zip?dl=0",
+            url: "https://www.dropbox.com/s/ib3bxfgyn6s9gfb/leveldb-library.xcframework.zip?dl=1",
             checksum: "33cf592497a7cb20facc75cb93de54b2b2c7e64fbaeb34fdfaf5773317edfcba"
         ),
-        // .binaryTarget(
-        //     name: "PSPDFKit",
-        //     url: "https://customers.pspdfkit.com/pspdfkit/xcframework/10.0.0.zip",
-        //     checksum: "bfb412ada4d291e22542c2d06b3e9f811616fb043fbd12660b0108541eb33a3c"),
-        // .binaryTarget(
-        //     name: "PSPDFKitUI",
-        //     url: "https://customers.pspdfkit.com/pspdfkitui/xcframework/10.0.0.zip",
-        //     checksum: "4903f4b7e753ac4760a827a72d7ed836a29e1700218ddfaa4e1f70814bd6f085"),
     ]
 )
