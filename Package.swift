@@ -19,6 +19,14 @@ let package = Package(
         .library(
             name: "FirebaseFunctions",
             targets: ["FirebaseFunctions", "GTMSessionFetcher"]
+        ),
+        .library(
+            name: "FirebaseRemoteConfig",
+            targets: ["FirebaseABTesting", "FirebaseRemoteConfig"]
+        ),
+        .library(
+            name: "FirebaseStorage",
+            targets: ["FirebaseStorage", "GTMSessionFetcher"]
         )
     ],
     targets: [
@@ -72,5 +80,20 @@ let package = Package(
             url: "https://www.dropbox.com/s/v73pyagl8f5yqhu/gRPC-Core.xcframework.zip?dl=1",
             checksum: "cfcb3aa50ed635213750255b282054f1f7e5de0dcb57e6fb9b48a32614b19b91"
         ),
+        .binaryTarget(
+            name: "FirebaseABTesting",
+            url: "https://www.dropbox.com/s/mr9yag84ktarqmd/FirebaseABTesting.xcframework.zip?dl=1",
+            checksum: "ebf30fdcf61a38919901a24e0c6ec5c4fa77aa15c56206dac64432c91b1b62fb"
+        ),
+        .binaryTarget(
+            name: "FirebaseRemoteConfig",
+            url: "https://www.dropbox.com/s/vf1oq60ucr1747b/FirebaseRemoteConfig.xcframework.zip?dl=1",
+            checksum: "72a8442c9275c135879b3f0d5e0d650fa8caa7636939f80ce172fdde62631a3c"
+        ),
+        .binaryTarget(
+            name: "FirebaseStorage",
+            url: "https://www.dropbox.com/s/1k6l2937zsxe5z0/FirebaseStorage.xcframework.zip?dl=1",
+            checksum: "345dcbdb1bfbaf38c1ef5faabece956a637b0df7f61117cf32c874f9d1c5e2c0"
+        )
     ]
 )
