@@ -6,7 +6,7 @@ let package = Package(
     products: [
         .library(
             name: "FirebaseCore",
-            targets: ["FirebasCore"]
+            targets: ["FirebaseCore"]
         ),
         .library(
             name: "FirebaseAuth",
@@ -104,7 +104,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "FirebaseFirestoreSwift",
-            path: "FirebaseFirebase/FirebaseFirestoreSwift.xcframework"
+            path: "FirebaseFirestore/FirebaseFirestoreSwift.xcframework"
         )
     ]
 )
