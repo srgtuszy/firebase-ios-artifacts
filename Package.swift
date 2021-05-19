@@ -6,7 +6,8 @@ let package = Package(
     products: [
         .library(
             name: "FirebaseCore",
-            targets: ["FirebaseCore", "GoogleUtilities", "GoogleDataTransport", "nanopb", "PromisesObjC"]
+            targets: ["FirebaseCore", "GoogleUtilities", "GoogleDataTransport", "nanopb", "PromisesObjC",
+            "FirebaseInstallations", "FirebaseCoreDiagnostics"]
         ),
         .library(
             name: "FirebaseAuth",
@@ -121,6 +122,14 @@ let package = Package(
         .binaryTarget(
             name: "PromisesObjC",
             path: "Common/PromisesObjC.xcframework"
+        ),
+        .binaryTarget(
+            name: "FirebaseInstallations",
+            path: "FirebaseCore/FirebaseInstallations.xcframework"
+        ),
+        .binaryTarget(
+            name: "FirebaseCoreDiagnostics",
+            path: "FirebaseCore/FirebaseCoreDiagnostics.xcframework"
         )
     ]
 )
