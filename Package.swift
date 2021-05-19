@@ -11,7 +11,7 @@ let package = Package(
         .library(
             name: "FirebaseInstallations",
             targets: ["FirebaseInstallations"]
-        )
+        ),
         .library(
             name: "FirebaseAuth",
             targets: ["FirebaseAuth", "GTMSessionFetcher"]
@@ -114,7 +114,7 @@ let package = Package(
             name: "GoogleUtilities",
             path: "Common/GoogleUtilities.xcframework"
         ),
-        binaryTarget(
+        .binaryTarget(
             name: "GoogleDataTransport",
             path: "Common/GoogleDataTransport.xcframework"
         ),
