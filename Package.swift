@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "FirebaseSDK",
+    name: "Firebase",
     products: [
         .library(
             name: "FirebaseAuth",
