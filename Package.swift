@@ -6,9 +6,12 @@ let package = Package(
     products: [
         .library(
             name: "FirebaseCore",
-            targets: ["FirebaseCore", "GoogleUtilities", "GoogleDataTransport", "nanopb", "PromisesObjC",
-            "FirebaseInstallations", "FirebaseCoreDiagnostics"]
+            targets: ["FirebaseCore", "GoogleUtilities", "GoogleDataTransport", "PromisesObjC", "FirebaseCoreDiagnostics"]
         ),
+        .library(
+            name: "FirebaseInstallations",
+            targets: ["FirebaseInstallations"]
+        )
         .library(
             name: "FirebaseAuth",
             targets: ["FirebaseAuth", "GTMSessionFetcher"]
@@ -19,7 +22,7 @@ let package = Package(
         ),
         .library(
             name: "FirebaseFirestore",
-            targets: ["abseil", "BoringSSL-GRPC", "FirebaseFirestore", "gRPC-C++", "gRPC-Core", "leveldb-library"]
+            targets: ["abseil", "BoringSSL-GRPC", "FirebaseFirestore", "gRPC-C++", "gRPC-Core", "leveldb-library", "nanopb"]
         ),
         .library(
             name: "FirebaseFirestoreSwift",
