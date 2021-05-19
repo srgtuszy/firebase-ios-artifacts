@@ -11,6 +11,14 @@ let package = Package(
         .library(
             name: "FirebaseDatabase",
             targets: ["FirebaseDatabase", "leveldb-library"]
+        ),
+        .library(
+            name: "FirebaseFirestore",
+            targets: ["abseil", "BoringSSL-GRPC", "FirebaseFirestore", "gRPC-C++", "gRPC-Core", "leveldb-library"]
+        ),
+        .library(
+            name: "FirebaseFunctions",
+            targets: ["FirebaseFunctions", "GTMSessionFetcher"]
         )
     ],
     targets: [
@@ -33,6 +41,36 @@ let package = Package(
             name: "leveldb-library",
             url: "https://www.dropbox.com/s/ib3bxfgyn6s9gfb/leveldb-library.xcframework.zip?dl=1",
             checksum: "33cf592497a7cb20facc75cb93de54b2b2c7e64fbaeb34fdfaf5773317edfcba"
-        )
+        ),
+        .binaryTarget(
+            name: "FirebaseFunctions",
+            url: "https://www.dropbox.com/s/sg40ufhbhn7qawk/FirebaseFunctions.xcframework.zip?dl=1",
+            checksum: "0ea53a2f303f4b5fef54f2fdf1e0014f25129b2f22d54e3edb266d117c77949a"
+        ),
+        .binaryTarget(
+            name: "abseil",
+            url: "https://www.dropbox.com/s/6ngfbxydsuedvhu/abseil.xcframework.zip?dl=1",
+            checksum: "5b227d04618d0b2d0fb570818fde470b2c4f2e508269cec4acf51bfd0e299320"
+        ),
+        .binaryTarget(
+            name: "BoringSSL-GRPC",
+            url: "https://www.dropbox.com/s/yq8wpcbgeccxpgh/BoringSSL-GRPC.xcframework.zip?dl=1",
+            checksum: "29a863ace536fc081f4fdc65ae81c79bd0d1ddc4eaace20e33a2f04b3c1dbee8"
+        ),
+        .binaryTarget(
+            name: "FirebaseFirestore",
+            url: "https://www.dropbox.com/s/1yjic5gri9wmjwl/FirebaseFirestore.xcframework.zip?dl=1",
+            checksum: "d3f618416ff5edff3127dc41033a6fc01c2ce6010287a2d9cda6b368b08b9b28"
+        ),
+        .binaryTarget(
+            name: "gRPC-C++",
+            url: "https://www.dropbox.com/s/ygvw1at31y10ru2/gRPC-C%2B%2B.xcframework.zip?dl=1",
+            checksum: "05ac454f5962a53d74d879104fb5be4717fac2e2a6c034ebb652c1868d54f240"
+        ),
+        .binaryTarget(
+            name: "gRPC-Core",
+            url: "https://www.dropbox.com/s/v73pyagl8f5yqhu/gRPC-Core.xcframework.zip?dl=1",
+            checksum: "cfcb3aa50ed635213750255b282054f1f7e5de0dcb57e6fb9b48a32614b19b91"
+        ),
     ]
 )
