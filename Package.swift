@@ -5,6 +5,10 @@ let package = Package(
     name: "Firebase",
     products: [
         .library(
+            name: "FirebaseCore",
+            targets: ["FirebasCore"]
+        ),
+        .library(
             name: "FirebaseAuth",
             targets: ["FirebaseAuth", "GTMSessionFetcher"]
         ),
@@ -15,6 +19,10 @@ let package = Package(
         .library(
             name: "FirebaseFirestore",
             targets: ["abseil", "BoringSSL-GRPC", "FirebaseFirestore", "gRPC-C++", "gRPC-Core", "leveldb-library"]
+        ),
+        .library(
+            name: "FirebaseFirestoreSwift",
+            targets: ["FirebaseFirestoreSwift"]
         ),
         .library(
             name: "FirebaseFunctions",
@@ -89,6 +97,14 @@ let package = Package(
         .binaryTarget(
             name: "FirebaseMessaging",
             path: "FirebaseMessaging/FirebaseMessaging.xcframework"
+        ),
+        .binaryTarget(
+            name: "FirebaseCore",
+            path: "FirebaseCore/FirebaseCore.xcframework"
+        ),
+        .binaryTarget(
+            name: "FirebaseFirestoreSwift",
+            path: "FirebaseFirebase/FirebaseFirestoreSwift.xcframework"
         )
     ]
 )
