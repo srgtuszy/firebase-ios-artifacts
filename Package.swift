@@ -6,19 +6,18 @@ let package = Package(
     products: [
         .library(
             name: "FirebaseAuth",
-            targets: ["FirebaseAuth"]
+            targets: ["FirebaseAuth", "GTMSessionFetcher"]
         ),
         .library(
             name: "FirebaseDatabase",
-            targets: ["FirebaseDatabase"]
+            targets: ["FirebaseDatabase", "leveldb-library"]
         ),
     ],
     targets: [
         .binaryTarget(
             name: "FirebaseAuth",
             url: "https://www.dropbox.com/s/03bboz14h0065rs/FirebaseAuth.xcframework.zip?dl=1",
-            checksum: "d5efb186add772e4aa044c322179c70b85e015fb994c4fb81892c6a3e681e850",
-            dependencies: ["GTMSessionFetcher"]            
+            checksum: "d5efb186add772e4aa044c322179c70b85e015fb994c4fb81892c6a3e681e850"
         ),
         .binaryTarget(
             name: "GTMSessionFetcher",
@@ -29,7 +28,6 @@ let package = Package(
             name: "FirebaseDatabase",
             url: "https://www.dropbox.com/s/qm49f286i4enpng/FirebaseDatabase.xcframework.zip?dl=1",
             checksum: "aae47f63b9782b883f8fd601b053ac78661148645f77b1da37915613b28a667c",
-            dependencies: ["leveldb-library"]
         ),
         .binaryTarget(
             name: "leveldb-library",
