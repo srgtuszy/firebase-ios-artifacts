@@ -27,6 +27,10 @@ let package = Package(
         .library(
             name: "FirebaseStorage",
             targets: ["FirebaseStorage", "GTMSessionFetcher"]
+        ),
+        .library(
+            name: "FirebaseMessaging",
+            targets: ["FirebaseMessaging"]
         )
     ],
     targets: [
@@ -81,6 +85,10 @@ let package = Package(
         .binaryTarget(
             name: "FirebaseStorage",
             path: "FirebaseStorage/FirebaseStorage.xcframework"
+        ),
+        .binaryTarget(
+            name: "FirebaseMessaging",
+            path: "FirebaseMessaging/FirebaseMessaging.xcframework"
         )
     ]
 )
