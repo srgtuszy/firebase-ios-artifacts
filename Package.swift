@@ -30,15 +30,35 @@ let package = Package(
         ),
         .library(
             name: "FirebaseAuth",
-            targets: ["FirebaseAuth", "GTMSessionFetcher"]
+            targets: ["FirebaseAuth"]
         ),
         .library(
             name: "FirebaseDatabase",
-            targets: ["FirebaseDatabase", "leveldb-library"]
+            targets: ["FirebaseDatabase"]
         ),
         .library(
             name: "FirebaseFirestore",
-            targets: ["abseil", "BoringSSL-GRPC", "FirebaseFirestore", "gRPC-C++", "gRPC-Core", "leveldb-library", "nanopb"]
+            targets: ["FirebaseFirestore"]
+        ),
+        .library(
+            name: "abseil",
+            targets: ["abself"]
+        ),
+        .library(
+            name: "BoringSSL-GRPC",
+            targets: ["BoringSSL-GRPC"]
+        ),
+        .library(
+            name: "gRPC-C++",
+            targets: ["gRPC-C++"]
+        ),
+        .library(
+            name: "leveldb-library",
+            targets: ["leveldb-library"]
+        ),
+        .library(
+            name: "nanopb",
+            targets: ["nanopb"]
         ),
         .library(
             name: "FirebaseFirestoreSwift",
@@ -46,15 +66,23 @@ let package = Package(
         ),
         .library(
             name: "FirebaseFunctions",
-            targets: ["FirebaseFunctions", "GTMSessionFetcher"]
+            targets: ["FirebaseFunctions"]
+        ),
+        .library(
+            name: "GTMSessionFetcher",
+            targets: ["GTMSessionFetcher"]
         ),
         .library(
             name: "FirebaseRemoteConfig",
-            targets: ["FirebaseABTesting", "FirebaseRemoteConfig"]
+            targets: ["FirebaseRemoteConfig"]
+        ),
+        .library(
+            name: "FirebaseABTesting",
+            targets: ["FirebaseABTesting"]
         ),
         .library(
             name: "FirebaseStorage",
-            targets: ["FirebaseStorage", "GTMSessionFetcher"]
+            targets: ["FirebaseStorage"]
         ),
         .library(
             name: "FirebaseMessaging",
@@ -64,91 +92,91 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "FirebaseAuth",
-            path: "FirebaseAuth/FirebaseAuth.xcframework"
+            path: "FirebaseAuth.xcframework"
         ),
         .binaryTarget(
             name: "GTMSessionFetcher",
-            path: "FirebaseAuth/GTMSessionFetcher.xcframework"
+            path: "GTMSessionFetcher.xcframework"
         ),
         .binaryTarget(
             name: "FirebaseDatabase",
-            path: "FirebaseDatabase/FirebaseDatabase.xcframework"
+            path: "FirebaseDatabase.xcframework"
         ),
         .binaryTarget(
             name: "leveldb-library",
-            path: "FirebaseDatabase/leveldb-library.xcframework"
+            path: "leveldb-library.xcframework"
         ),
         .binaryTarget(
             name: "FirebaseFunctions",
-            path: "FirebaseFunctions/FirebaseFunctions.xcframework"
+            path: "FirebaseFunctions.xcframework"
         ),
         .binaryTarget(
             name: "abseil",
-            path: "FirebaseFirestore/abseil.xcframework"
+            path: "abseil.xcframework"
         ),
         .binaryTarget(
             name: "BoringSSL-GRPC",
-            path: "FirebaseFirestore/BoringSSL-GRPC.xcframework"
+            path: "BoringSSL-GRPC.xcframework"
         ),
         .binaryTarget(
             name: "FirebaseFirestore",
-            path: "FirebaseFirestore/FirebaseFirestore.xcframework"
+            path: "FirebaseFirestore.xcframework"
         ),
         .binaryTarget(
             name: "gRPC-C++",
-            path: "FirebaseFirestore/gRPC-C++.xcframework"
+            path: "gRPC-C++.xcframework"
         ),
         .binaryTarget(
             name: "gRPC-Core",
-            path: "FirebaseFirestore/gRPC-Core.xcframework"
+            path: "gRPC-Core.xcframework"
         ),
         .binaryTarget(
             name: "FirebaseABTesting",
-            path: "FirebaseRemoteConfig/FirebaseABTesting.xcframework"           
+            path: "FirebaseABTesting.xcframework"           
         ),
         .binaryTarget(
             name: "FirebaseRemoteConfig",
-            path: "FirebaseRemoteConfig/FirebaseRemoteConfig.xcframework"
+            path: "FirebaseRemoteConfig.xcframework"
         ),
         .binaryTarget(
             name: "FirebaseStorage",
-            path: "FirebaseStorage/FirebaseStorage.xcframework"
+            path: "FirebaseStorage.xcframework"
         ),
         .binaryTarget(
             name: "FirebaseMessaging",
-            path: "FirebaseMessaging/FirebaseMessaging.xcframework"
+            path: "FirebaseMessaging.xcframework"
         ),
         .binaryTarget(
             name: "FirebaseCore",
-            path: "FirebaseCore/FirebaseCore.xcframework"
+            path: "FirebaseCore.xcframework"
         ),
         .binaryTarget(
             name: "FirebaseFirestoreSwift",
-            path: "FirebaseFirestore/FirebaseFirestoreSwift.xcframework"
+            path: "FirebaseFirestoreSwift.xcframework"
         ),
         .binaryTarget(
             name: "GoogleUtilities",
-            path: "Common/GoogleUtilities.xcframework"
+            path: "GoogleUtilities.xcframework"
         ),
         .binaryTarget(
             name: "GoogleDataTransport",
-            path: "Common/GoogleDataTransport.xcframework"
+            path: "GoogleDataTransport.xcframework"
         ),
         .binaryTarget(
             name: "nanopb",
-            path: "Common/nanopb.xcframework"
+            path: "nanopb.xcframework"
         ),
         .binaryTarget(
             name: "PromisesObjC",
-            path: "Common/PromisesObjC.xcframework"
+            path: "PromisesObjC.xcframework"
         ),
         .binaryTarget(
             name: "FirebaseInstallations",
-            path: "FirebaseCore/FirebaseInstallations.xcframework"
+            path: "FirebaseInstallations.xcframework"
         ),
         .binaryTarget(
             name: "FirebaseCoreDiagnostics",
-            path: "FirebaseCore/FirebaseCoreDiagnostics.xcframework"
+            path: "FirebaseCoreDiagnostics.xcframework"
         )
     ]
 )
