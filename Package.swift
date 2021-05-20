@@ -42,7 +42,7 @@ let package = Package(
         ),
         .library(
             name: "abseil",
-            targets: ["abself"]
+            targets: ["abseil"]
         ),
         .library(
             name: "BoringSSL-GRPC",
